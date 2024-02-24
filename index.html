@@ -17,6 +17,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -30,29 +31,49 @@
           </p>
         </div>
         <div class="form-wrapper">
-          <p>Try it free 7 days then $20/mo. thereafter</p>
-          <form>
-            <input type="text" placeholder="First Name" name="fname" />
-            <input type="text" placeholder="Last Name" name="lname" />
-            <input type="text" placeholder="Email Address" name="email" />
-            <input type="text" placeholder="Password" name="password" />
-            <input type="submit" value="Claim your free trial" />
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          <form id="myForm">
+            <div class="input-wrapper">
+              <input type="text" placeholder="First Name" name="fname" />
+              <p id="error-msg-fname" class="error-msg"></p>
+              <img src="images/icon-error.svg" class="hidden" id="fname-img" />
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Last Name" name="lname" />
+              <p id="error-msg-lname" class="error-msg"></p>
+              <img src="images/icon-error.svg" class="hidden" id="lname-img" />
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Email Address" name="email" />
+              <p id="error-msg-email" class="error-msg"></p>
+              <img src="images/icon-error.svg" class="hidden" id="email-img" />
+            </div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Password" name="password" />
+              <p id="error-msg-password" class="error-msg"></p>
+              <img
+                src="images/icon-error.svg"
+                class="hidden"
+                id="password-img"
+              />
+            </div>
+
+            <input type="submit" value="CLAIM YOUR FREE TRIAL" />
+            <p>
+              By clicking the button, you are agreeing to our
+              <strong>Terms and Services</strong>
+            </p>
           </form>
-          <p>
-            By clicking the button, you are agreeing to our
-            <strong>Terms and Services</strong>
-          </p>
         </div>
       </div>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Yismel Rodriguez</a>.
+        </p>
+      </footer>
     </div>
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Yismel Rodriguez</a>.
-      </p>
-    </footer>
   </body>
 </html>
